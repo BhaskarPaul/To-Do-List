@@ -1,0 +1,165 @@
+* {box-sizing: border-box;}
+
+body {
+    /* background-image: url("28518.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    width: 100%; */
+    background: rgba(0, 238, 255, 0.075);
+} 
+
+marquee {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    font-family: 'Piedra', cursive;
+    background-color: rgb(45, 253, 3);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0  rgb(23, 114, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(2, 255, 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    width: 30%;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+h1 {  
+    border: 2px solid transparent;
+    border-radius: 202px;
+    padding: 5px 7px;
+    font-family: 'Piedra', cursive;
+    font-family: 'Piedra', cursive;
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 7px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+input {
+    font-family: 'Piedra', cursive;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    font-size: 15px;
+    margin: 20px 0;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgb(253, 3, 232), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    padding-left: 40px;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul li {
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-family: 'Piedra', cursive;
+    box-shadow: 0 4px 8px 0 rgb(45, 253, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 1.5px;
+    background-color: white;
+    line-height: 40px;
+}
+
+li:nth-child(odd) {
+    box-shadow: 0 4px 8px 0 rgb(251, 255, 26), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul li:hover {
+    transform: scale(1.04); 
+}
+
+span {
+    background: rgb(253, 95, 4);
+    border: 1px solid rgb(253, 95, 4);
+    border-radius: 20px;
+    width: -40px;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+    visibility: hidden;
+    /* transition: 0.3s; */
+}
+
+li:hover span {
+    width: 40px;
+    visibility: visible;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* @-webkit-keyframes wave {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@-moz-keyframes wave {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@keyframes wave {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+} */
+
+@-webkit-keyframes wave2 {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
+@-moz-keyframes wave2 {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
+@keyframes wave2 {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Piedra', cursive;
+    margin-top: 170px;
+}
+
+@media only screen and (max-width: 500px) {
+    .list {
+        width: 80%;
+    }
+
+    marquee {
+        width: 80%;
+    }
+}
